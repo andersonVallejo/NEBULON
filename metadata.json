@@ -1,0 +1,6 @@
+{
+  "name": "NEBULØN — Plataforma Tecnológica y Comunidad",
+  "description": "Plataforma digital de marca tecnológica personal, portafolio de ingeniería de software, servicios de desarrollo y comunidad colaborativa de programación.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

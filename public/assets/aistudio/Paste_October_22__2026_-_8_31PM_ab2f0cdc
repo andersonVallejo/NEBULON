@@ -1,0 +1,1226 @@
+# NEBULØN — MASTER PROMPT
+## Plataforma digital de marca personal, portafolio tecnológico y comunidad de programación
+
+### 01. ROL, RESPONSABILIDADES Y MISIÓN
+
+Actúa como un equipo multidisciplinario de ingeniería de software de nivel senior, integrado por:
+
+- Arquitecto de software y soluciones digitales.
+- Ingeniero frontend especializado en interfaces modernas.
+- Ingeniero backend especializado en APIs y bases de datos.
+- Diseñador UX/UI especializado en productos digitales premium.
+- Especialista en identidad visual y diseño de marca.
+- Especialista en seguridad de aplicaciones web.
+- Ingeniero de calidad y automatización de pruebas.
+- Especialista en accesibilidad, SEO y rendimiento.
+- Product manager especializado en plataformas comunitarias.
+- Especialista en despliegue, mantenimiento y escalabilidad.
+
+Tu misión es diseñar, desarrollar, verificar y documentar una plataforma digital integral llamada **NEBULØN**, concebida como mi marca tecnológica personal y como un espacio para mostrar proyectos, ofrecer servicios profesionales, compartir conocimientos y reunir una comunidad de personas apasionadas por la programación.
+
+No quiero una plantilla genérica, una landing page básica ni una maqueta que solamente parezca funcional.
+
+Quiero un producto digital coherente, profesional, visualmente distintivo, técnicamente sólido, seguro, accesible, responsive y preparado para crecer.
+
+Debes analizar los requisitos, tomar decisiones técnicas justificadas, implementar funcionalidades reales, comprobar su funcionamiento y corregir los errores detectados.
+
+No te limites a sugerir soluciones: implementa lo que permitan las herramientas disponibles. Cuando necesites credenciales, servicios externos o decisiones que no se hayan proporcionado, documenta los requisitos sin inventar información ni simular integraciones.
+
+---
+
+# 02. IDENTIDAD DE MARCA: NEBULØN
+
+El nombre oficial de la marca es:
+
+**NEBULØN**
+
+La letra Ø es un componente fundamental de la identidad visual. Representa una O atravesada por una línea diagonal que forma parte del propio carácter.
+
+No sustituyas el nombre por NEBULON, NEBULÓN, NEBUL0N ni otras variantes en el logotipo principal.
+
+## Dirección de marca
+
+NEBULØN debe transmitir:
+
+- Innovación tecnológica.
+- Creatividad e imaginación.
+- Ingeniería y precisión.
+- Conocimiento compartido.
+- Exploración de nuevas ideas.
+- Profesionalismo y confianza.
+- Comunidad y colaboración.
+- Evolución constante.
+
+La identidad debe sentirse como una marca tecnológica contemporánea que podría evolucionar desde un portafolio personal hasta un ecosistema de productos digitales.
+
+## Logotipo y sistema gráfico
+
+Diseña un logotipo tipográfico original, reconocible y minimalista.
+
+Requisitos:
+- NEBULØN debe conservar su escritura oficial.
+- La Ø debe representarse correctamente.
+- La tipografía debe tener personalidad, excelente legibilidad y proporciones equilibradas.
+- El logotipo debe funcionar sobre fondos oscuros y claros.
+- Crea variantes horizontal, compacta y de icono cuando sea viable.
+- Prepara un favicon reconocible a tamaños pequeños.
+- Mantén consistencia entre el logotipo, los encabezados, los iconos y los elementos gráficos.
+- Si la representación gráfica utiliza SVG, debe ser nítida y escalable.
+- No utilices un símbolo genérico de galaxia como sustituto de toda la identidad.
+- Evita copiar logotipos existentes.
+
+Define una guía de marca con colores, tipografías, versiones del logotipo, espaciado, usos incorrectos y reglas de aplicación.
+
+## Eslogan provisional
+
+“Explora ideas. Construye posibilidades.”
+
+Puedes proponer alternativas, pero no conviertas el eslogan en el elemento principal de la identidad.
+
+---
+
+# 03. VISIÓN DEL PRODUCTO
+
+NEBULØN debe integrar cinco áreas estratégicas dentro de una experiencia unificada:
+
+1. Marca personal y presentación profesional.
+2. Portafolio de proyectos y servicios de desarrollo.
+3. Comunidad tecnológica centrada en la programación.
+4. Laboratorio de experimentación y aprendizaje.
+5. Centro de contacto, colaboración y oportunidades profesionales.
+
+Cada área debe tener un propósito claro, pero compartir la misma identidad visual, sistema de navegación y criterios de calidad.
+
+La plataforma debe estar pensada tanto para visitantes que quieren contratar mis servicios como para programadores principiantes, desarrolladores experimentados, estudiantes y personas interesadas en la tecnología.
+
+No mezcles todas las funciones en una sola página interminable. Construye una arquitectura de información clara, con secciones diferenciadas y rutas de navegación intuitivas.
+
+---
+
+# 04. EXPERIENCIA VISUAL Y SISTEMA DE DISEÑO
+
+Desarrolla una interfaz premium con una dirección artística tecnológica, elegante y original.
+
+## Paleta de referencia
+
+- Fondo principal: negro azulado o grafito profundo.
+- Superficies: grises oscuros diferenciados por niveles.
+- Color principal de acento: violeta eléctrico.
+- Color secundario: azul tecnológico.
+- Texto principal: blanco suave.
+- Texto secundario: gris frío.
+- Estados: colores accesibles y consistentes para éxito, advertencia, error e información.
+
+Define los valores definitivos mediante variables CSS o tokens equivalentes.
+
+La paleta debe mantener suficiente contraste y evitar el uso excesivo de colores saturados.
+
+## Lenguaje visual
+
+Utiliza:
+- Tipografía moderna con jerarquía clara.
+- Composición editorial cuidada.
+- Espacios negativos intencionales.
+- Cuadrículas bien alineadas.
+- Tarjetas con profundidad sutil.
+- Bordes delicados.
+- Gradientes controlados.
+- Elementos gráficos inspirados en redes, sistemas, órbitas y estructuras digitales, siempre que aporten significado.
+- Animaciones cortas y fluidas.
+- Transiciones coherentes.
+- Estados hover, focus, active, disabled y loading.
+- Iconografía consistente.
+- Ilustraciones o mockups originales cuando aporten valor.
+
+El resultado debe parecer diseñado por un equipo de producto con experiencia.
+
+Evita:
+- Estética genérica de plantilla.
+- Exceso de neón y brillos.
+- Partículas en movimiento por toda la pantalla.
+- Animaciones permanentes que distraigan.
+- Tarjetas repetidas sin jerarquía visual.
+- Elementos que parezcan botones pero no funcionen.
+- Texto de relleno.
+- Emojis como sustitutos de iconografía profesional.
+- Efectos que reduzcan el rendimiento.
+- Interfaces que dependan de imágenes decorativas para comunicar información esencial.
+
+Incluye tema oscuro como experiencia principal. Implementa tema claro opcional si puede hacerse de forma coherente y completa.
+
+Respeta las preferencias de movimiento reducido del sistema operativo.
+
+---
+
+# 05. ARQUITECTURA DE NAVEGACIÓN
+
+Diseña una navegación global que pueda ampliarse sin perder claridad.
+
+Secciones principales:
+
+1. Inicio.
+2. Portafolio.
+3. Servicios.
+4. Comunidad.
+5. Laboratorio.
+6. Aprender.
+7. Sobre NEBULØN.
+8. Contacto.
+
+Incluye acceso visible a iniciar sesión y registrarse cuando el sistema de usuarios esté implementado.
+
+Para usuarios autenticados, proporciona acceso a su perfil y a las funciones que les correspondan.
+
+La navegación debe:
+- Funcionar en móvil, tableta y escritorio.
+- Mostrar claramente la ubicación actual.
+- Mantener accesibilidad por teclado.
+- Disponer de menú móvil funcional.
+- Evitar enlaces rotos.
+- Utilizar rutas reales y nombres comprensibles.
+- Mantener una experiencia coherente entre páginas públicas y privadas.
+
+No añadas todas las opciones al menú principal si la interfaz queda saturada. Organiza las opciones secundarias dentro de menús o áreas apropiadas.
+
+---
+
+# 06. PÁGINA DE INICIO
+
+La página de inicio debe presentar NEBULØN y explicar rápidamente qué ofrece.
+
+## A. Hero principal
+
+Crea una sección inicial de alto impacto con:
+
+- Logotipo NEBULØN.
+- Titular que comunique la visión de la marca.
+- Descripción breve y convincente.
+- Botón para explorar proyectos.
+- Botón para entrar en la comunidad.
+- Acceso a solicitar un proyecto o presupuesto.
+- Composición visual original relacionada con programación, sistemas digitales y creatividad.
+
+El titular debe comunicar valor, no limitarse a una frase publicitaria vacía.
+
+## B. Presentación de la marca
+
+Explica qué es NEBULØN, qué construye, qué servicios ofrece y qué busca aportar al ecosistema tecnológico.
+
+Distingue entre la marca personal, los proyectos propios y las funciones comunitarias.
+
+## C. Proyectos destacados
+
+Muestra una selección de proyectos con:
+- Imagen o mockup.
+- Nombre.
+- Descripción.
+- Categoría.
+- Tecnologías utilizadas.
+- Estado del proyecto.
+- Acceso a una ficha detallada.
+- Demostración o repositorio cuando estén disponibles.
+
+## D. Servicios
+
+Presenta los servicios principales de desarrollo web y soluciones digitales.
+
+## E. Vista previa de la comunidad
+
+Muestra las categorías, los debates destacados y una invitación a participar, sin exponer información privada ni contenido que deba permanecer restringido.
+
+## F. Laboratorio y aprendizaje
+
+Presenta experimentos, proyectos en desarrollo, tutoriales o recursos publicados.
+
+## G. Prueba social auténtica
+
+Muestra opiniones aprobadas de usuarios reales cuando existan.
+
+Si la plataforma todavía no tiene reseñas, utiliza una invitación a participar. No inventes clientes, testimonios, cifras de usuarios ni indicadores de popularidad.
+
+## H. Llamada a la acción final
+
+Ofrece caminos claros para:
+- Contratar un servicio.
+- Presentar una idea.
+- Unirse a la comunidad.
+- Explorar proyectos.
+- Compartir conocimientos.
+
+---
+
+# 07. PORTAFOLIO PROFESIONAL
+
+Construye un portafolio completo, filtrable y administrable.
+
+## Categorías iniciales
+
+- Páginas web.
+- Landing pages.
+- Aplicaciones web.
+- Sistemas de gestión.
+- Reservas y citas.
+- Herramientas digitales.
+- Proyectos interactivos.
+- Experiencias 3D.
+- Experimentos tecnológicos.
+- Otros proyectos.
+
+## Funciones
+
+- Filtrado por categoría.
+- Búsqueda por nombre, descripción o tecnología.
+- Ordenamiento.
+- Paginación cuando sea necesaria.
+- Vista de tarjetas y detalles.
+- Imágenes optimizadas.
+- Galería de capturas.
+- Descripción del problema que resuelve.
+- Objetivos y decisiones técnicas.
+- Funcionalidades.
+- Tecnologías utilizadas.
+- Retos y aprendizajes.
+- Estado del proyecto.
+- Enlaces externos verificados.
+- Fecha o versión cuando sea pertinente.
+
+Cada proyecto tendrá una página individual con una estructura consistente.
+
+El panel administrativo permitirá crear, editar, publicar, ocultar y eliminar proyectos.
+
+Distingue visualmente entre:
+- Concepto.
+- Prototipo.
+- En desarrollo.
+- Publicado.
+- Archivado.
+
+No presentes un prototipo como una aplicación de producción.
+
+No inventes resultados comerciales ni métricas de rendimiento.
+
+---
+
+# 08. SERVICIOS Y CONTRATACIÓN
+
+NEBULØN debe ayudar a convertir visitas en oportunidades de trabajo reales.
+
+## Servicios iniciales
+
+- Diseño y desarrollo de páginas web.
+- Landing pages para negocios.
+- Portafolios profesionales.
+- Sistemas de reservas y citas.
+- Aplicaciones web.
+- Paneles administrativos.
+- Automatización de tareas digitales.
+- Mejoras de interfaces existentes.
+- Mantenimiento web.
+- Experiencias interactivas personalizadas.
+
+Los servicios deben ser editables desde el panel administrativo.
+
+Cada ficha incluirá:
+- Descripción.
+- Beneficios.
+- Funcionalidades incluidas.
+- Alcance del trabajo.
+- Exclusiones.
+- Requisitos del cliente.
+- Precio fijo o presupuesto personalizado.
+- Plazo estimado configurable.
+- Preguntas frecuentes.
+- Botón de solicitud.
+
+No inventes precios definitivos, disponibilidad ni garantías.
+
+## Formulario de proyectos
+
+Permite que los clientes envíen solicitudes con:
+- Nombre.
+- Correo.
+- Medio de contacto preferido.
+- Tipo de proyecto.
+- Descripción de la necesidad.
+- Funcionalidades deseadas.
+- Presupuesto orientativo opcional.
+- Plazo deseado opcional.
+- Referencias o enlaces opcionales.
+- Aceptación del aviso de privacidad.
+
+Valida los datos en cliente y servidor.
+
+Evita envíos duplicados, protege contra spam y muestra el resultado real del envío.
+
+## Gestión comercial
+
+El administrador podrá:
+- Consultar solicitudes.
+- Cambiar estados.
+- Registrar notas privadas.
+- Marcar solicitudes prioritarias.
+- Buscar y filtrar.
+- Registrar el historial de cambios importantes.
+- Exportar información cuando sea apropiado y seguro.
+
+Estados sugeridos:
+Nueva, en revisión, contactada, propuesta enviada, aceptada, en desarrollo, finalizada y descartada.
+
+No incluyas pagos en línea en la primera versión salvo que exista una necesidad concreta. Diseña la arquitectura para incorporar pagos en el futuro si el negocio lo requiere.
+
+---
+
+# 09. COMUNIDAD NEBULØN — PROGRAMACIÓN Y TECNOLOGÍA
+
+Esta es una de las funciones más importantes y diferenciadoras de la plataforma.
+
+No quiero una simple sección de comentarios. Quiero un espacio comunitario que permita a personas apasionadas por la programación conocerse, aprender, compartir proyectos y colaborar.
+
+La comunidad debe tener una identidad visual propia, manteniendo la coherencia con NEBULØN.
+
+## 9.1. Registro y perfiles
+
+Implementa un sistema de cuentas con:
+- Registro.
+- Inicio y cierre de sesión.
+- Recuperación segura de contraseña.
+- Verificación de correo cuando el proveedor lo permita.
+- Perfil público configurable.
+- Nombre de usuario único.
+- Avatar.
+- Biografía.
+- Lenguajes y tecnologías favoritas.
+- Nivel de aprendizaje opcional.
+- Enlaces profesionales opcionales.
+- Proyectos compartidos.
+- Fecha de incorporación.
+- Preferencias de privacidad.
+
+No expongas el correo electrónico, datos privados ni información de seguridad de otros usuarios.
+
+Permite a los usuarios editar su perfil y solicitar la eliminación de su cuenta conforme a la política de datos.
+
+No exijas información personal innecesaria para participar.
+
+## 9.2. Espacios de conversación
+
+Organiza la comunidad en categorías como:
+
+- Programación para principiantes.
+- HTML, CSS y JavaScript.
+- Python.
+- Java y C#.
+- Desarrollo frontend.
+- Desarrollo backend.
+- Aplicaciones móviles.
+- Bases de datos.
+- Inteligencia artificial.
+- Diseño UI/UX.
+- Git y GitHub.
+- Proyectos personales.
+- Búsqueda de colaboradores.
+- Dudas técnicas.
+- Retos y desafíos.
+- Recursos educativos.
+- Oportunidades y orientación profesional.
+
+Las categorías deben ser administrables.
+
+## 9.3. Publicaciones
+
+Los usuarios podrán:
+- Crear publicaciones.
+- Escribir preguntas.
+- Compartir soluciones.
+- Publicar avances.
+- Compartir proyectos.
+- Añadir etiquetas.
+- Editar sus publicaciones.
+- Eliminar su propio contenido.
+- Responder mediante comentarios.
+- Consultar conversaciones.
+- Buscar publicaciones.
+- Filtrar por categoría.
+- Ordenar por reciente o actividad.
+- Guardar publicaciones favoritas.
+
+Implementa un editor de contenido seguro.
+
+Permite compartir fragmentos de código con formato legible y resaltado sintáctico cuando sea viable.
+
+El código publicado no debe ejecutarse automáticamente dentro de la plataforma.
+
+Evita que el contenido enviado pueda inyectar HTML o JavaScript peligroso.
+
+## 9.4. Preguntas y respuestas técnicas
+
+Crea un formato específico para preguntas técnicas.
+
+Una pregunta podrá incluir:
+- Título.
+- Descripción.
+- Lenguaje o tecnología.
+- Fragmento de código.
+- Mensaje de error.
+- Resultado esperado.
+- Categoría.
+- Etiquetas.
+
+Permite publicar respuestas y marcar una respuesta como solución aceptada cuando corresponda.
+
+La interfaz debe distinguir claramente entre una publicación general, una pregunta y una respuesta.
+
+## 9.5. Interacciones comunitarias
+
+Implementa:
+- Reacciones mediante un conjunto limitado de opciones.
+- Comentarios.
+- Respuestas a comentarios si el diseño lo necesita.
+- Guardado de publicaciones.
+- Seguimiento de usuarios opcional.
+- Notificaciones internas.
+- Contadores consistentes.
+
+Evita los sistemas de popularidad excesivamente complejos en la primera versión.
+
+Cada usuario debe poder cambiar o retirar sus propias reacciones.
+
+Evita los votos duplicados y los contadores manipulables.
+
+## 9.6. Retos de programación
+
+Añade un espacio para retos comunitarios.
+
+Cada reto podrá contener:
+- Título.
+- Descripción.
+- Objetivo.
+- Lenguajes permitidos.
+- Dificultad.
+- Fecha de publicación.
+- Fecha límite opcional.
+- Reglas.
+- Recursos de apoyo.
+- Soluciones compartidas.
+
+En la primera versión, las soluciones pueden ser publicaciones de código y explicaciones.
+
+No ejecutes código arbitrario de usuarios en el servidor. Si en el futuro se incorpora un evaluador automático, deberá utilizar un entorno de ejecución aislado, con límites de recursos y controles de seguridad específicos.
+
+## 9.7. Colaboración en proyectos
+
+Crea un espacio para que las personas puedan:
+- Presentar una idea.
+- Buscar colaboradores.
+- Indicar las tecnologías necesarias.
+- Describir las tareas disponibles.
+- Definir si el proyecto es educativo, experimental o comercial.
+- Compartir un repositorio cuando exista.
+- Actualizar el estado del proyecto.
+
+Estados posibles: idea, buscando colaboradores, en desarrollo, pausado y finalizado.
+
+No prometas que la plataforma ofrece empleo ni garantices la calidad de las colaboraciones.
+
+Añade avisos sobre la necesidad de definir responsabilidades, licencias, propiedad intelectual y condiciones de colaboración antes de compartir o publicar trabajo conjunto.
+
+## 9.8. Notificaciones
+
+Diseña un sistema de notificaciones internas para:
+- Respuestas a publicaciones.
+- Comentarios.
+- Menciones.
+- Reacciones relevantes.
+- Actualizaciones de proyectos seguidos.
+- Cambios relacionados con la participación del usuario.
+
+Incluye:
+- Indicador de notificaciones sin leer.
+- Marcar como leída.
+- Marcar todas como leídas.
+- Preferencias de notificación.
+- Estados vacíos.
+- Paginación o carga incremental cuando sea necesaria.
+
+No envíes correos automáticos sin una configuración real y sin respetar las preferencias del usuario.
+
+## 9.9. Moderación y convivencia
+
+La comunidad debe contar con reglas visibles.
+
+Implementa:
+- Denuncia de publicaciones y comentarios.
+- Motivos de denuncia.
+- Cola de moderación.
+- Herramientas para ocultar contenido.
+- Suspensión temporal de cuentas cuando proceda.
+- Gestión de usuarios bloqueados.
+- Registro de acciones administrativas.
+- Restricciones contra spam.
+- Límites de frecuencia.
+- Protección contra cuentas automatizadas.
+- Mecanismo de apelación o revisión cuando corresponda.
+
+Establece normas contra el acoso, amenazas, discriminación, spam, publicación de credenciales, exposición de datos personales y contenido malicioso.
+
+No permitas que un moderador oculte las acciones realizadas: registra las operaciones relevantes y limita los permisos según el rol.
+
+Define roles con privilegios mínimos:
+- Usuario.
+- Moderador.
+- Administrador.
+
+No otorgues privilegios administrativos a usuarios recién registrados.
+
+## 9.10. Privacidad comunitaria
+
+Los usuarios deben saber qué información es pública.
+
+Permite controlar la visibilidad de los datos del perfil cuando sea viable.
+
+No publiques automáticamente los correos, mensajes privados ni información sensible.
+
+Si se implementa mensajería privada en una fase posterior, debe contar con controles contra abuso, mecanismos de bloqueo y reglas de conservación de datos.
+
+## 9.11. Experiencia comunitaria
+
+La comunidad debe funcionar correctamente incluso cuando haya pocos usuarios.
+
+Diseña estados vacíos atractivos con invitaciones a:
+- Presentarse.
+- Compartir el primer proyecto.
+- Publicar una pregunta.
+- Participar en un reto.
+- Ayudar a otro programador.
+
+No simules usuarios activos, mensajes, reacciones ni publicaciones como si fueran reales.
+
+Utiliza datos de demostración claramente etiquetados únicamente en el entorno de desarrollo.
+
+---
+
+# 10. LABORATORIO TECNOLÓGICO
+
+Crea un espacio experimental para proyectos que todavía no estén listos para considerarse productos terminados.
+
+Podrá incluir:
+- Experimentos visuales.
+- Prototipos.
+- Animaciones.
+- Proyectos 3D.
+- Inteligencia artificial.
+- Pruebas de interfaces.
+- Herramientas experimentales.
+- Aplicaciones en desarrollo.
+- Demostraciones de nuevas tecnologías.
+
+Cada proyecto tendrá una ficha con descripción, objetivo, estado, tecnologías y enlaces disponibles.
+
+Distingue claramente entre:
+- Experimento.
+- Prototipo.
+- Proyecto educativo.
+- Producto publicado.
+
+Si existe una demostración interactiva, intégrala de manera segura. No cargues código externo arbitrario ni ejecutes scripts no confiables dentro del sitio principal.
+
+---
+
+# 11. CENTRO DE APRENDIZAJE
+
+Añade una sección para compartir conocimientos relacionados con la programación.
+
+Puede incluir:
+- Artículos técnicos.
+- Tutoriales.
+- Guías para principiantes.
+- Fragmentos de código explicados.
+- Recursos gratuitos.
+- Buenas prácticas.
+- Soluciones a errores frecuentes.
+- Experiencias y aprendizajes de proyectos reales.
+
+Organiza el contenido por categoría, tecnología, nivel y etiquetas.
+
+Implementa búsqueda y páginas individuales.
+
+Cada artículo debe tener:
+- Título.
+- Resumen.
+- Autor.
+- Fecha de publicación y actualización cuando corresponda.
+- Contenido estructurado.
+- Bloques de código.
+- Referencias cuando sean necesarias.
+- Navegación hacia contenidos relacionados.
+
+Incluye herramientas administrativas para redactar, editar, guardar borradores y publicar artículos.
+
+No copies contenido protegido ni atribuyas conocimientos a personas que no lo hayan escrito.
+
+---
+
+# 12. RESEÑAS, RECOMENDACIONES Y REPORTES
+
+Crea un espacio independiente para opiniones sobre los servicios y el funcionamiento de NEBULØN.
+
+Incluye:
+
+## Reseñas de servicios
+- Nombre público o alias.
+- Proyecto o servicio relacionado.
+- Valoración opcional.
+- Comentario.
+- Fecha.
+- Estado de moderación.
+
+## Recomendaciones
+Permite que clientes o colaboradores compartan experiencias reales.
+
+## Sugerencias
+Permite proponer mejoras para la plataforma.
+
+## Reportes de errores
+Permite informar sobre enlaces rotos, fallos técnicos, problemas de accesibilidad y errores funcionales.
+
+## Quejas privadas
+Ofrece un canal privado para reportar inconvenientes relacionados con los servicios o la comunidad.
+
+Implementa moderación antes de publicar contenido público.
+
+Permite administrar estados, responder cuando corresponda y resolver reportes.
+
+No prometas anonimato absoluto si la infraestructura registra datos técnicos. Explica claramente qué información se recopila y por qué.
+
+Protege la información privada y evita publicar los detalles de una queja sin autorización.
+
+---
+
+# 13. PANEL DE ADMINISTRACIÓN
+
+Crea un panel de administración privado, profesional y separado de la interfaz pública.
+
+Debe incluir:
+
+## Dashboard
+- Resumen de proyectos.
+- Solicitudes recibidas.
+- Publicaciones pendientes de moderación.
+- Reportes abiertos.
+- Actividad reciente relevante.
+
+Las estadísticas deben calcularse a partir de datos reales. Si todavía no hay datos, muestra cero o un estado vacío.
+
+## Gestión de contenido
+- Crear, editar y eliminar proyectos.
+- Gestionar categorías y tecnologías.
+- Gestionar servicios.
+- Administrar artículos y tutoriales.
+- Actualizar imágenes.
+- Editar textos institucionales.
+- Gestionar enlaces.
+- Administrar metadatos SEO.
+
+## Gestión comunitaria
+- Consultar publicaciones denunciadas.
+- Moderar comentarios.
+- Gestionar reportes.
+- Aplicar restricciones autorizadas.
+- Consultar el historial de moderación.
+- Gestionar categorías y retos.
+
+## Gestión comercial
+- Consultar solicitudes.
+- Actualizar estados.
+- Registrar notas privadas.
+- Gestionar reseñas y recomendaciones.
+
+## Configuración
+- Datos de marca.
+- Redes sociales.
+- Correo.
+- Preferencias del sitio.
+- Opciones de visualización.
+- Configuración de servicios externos.
+
+Las operaciones destructivas deben solicitar confirmación.
+
+Los permisos deben comprobarse en el servidor. Ocultar botones en la interfaz no constituye una medida de seguridad.
+
+---
+
+# 14. ARQUITECTURA TÉCNICA
+
+Antes de desarrollar, analiza los requisitos y elige una arquitectura coherente con el alcance.
+
+Si no existen restricciones previas, considera una arquitectura moderna con:
+
+## Frontend
+Un framework mantenible, como React con TypeScript y una herramienta de compilación adecuada, o una alternativa equivalente justificada.
+
+Si el proyecto existente requiere HTML, CSS y JavaScript nativos, puedes mantener esa tecnología si resulta suficiente y está bien organizada.
+
+## Backend
+Una API con:
+- Validación de datos.
+- Autenticación.
+- Autorización.
+- Reglas de negocio.
+- Manejo de errores.
+- Acceso seguro a la base de datos.
+- Límites de solicitudes.
+- Registro de operaciones relevantes.
+
+## Base de datos
+Considera PostgreSQL o una alternativa equivalente.
+
+Define modelos, relaciones, restricciones, índices y migraciones.
+
+## Servicios externos
+Evalúa servicios adecuados para:
+- Autenticación.
+- Almacenamiento de imágenes.
+- Correo transaccional.
+- Protección contra spam.
+- Analítica respetuosa con la privacidad.
+
+No añadas proveedores innecesarios.
+
+## Infraestructura
+Documenta cómo desplegar el frontend, backend, base de datos y archivos.
+
+Evita asumir que cualquier alojamiento estático puede ejecutar el backend.
+
+Si una solución gestionada reduce la complejidad de mantenimiento, puedes recomendarla, pero explica sus limitaciones, costes potenciales y dependencias.
+
+No añadas Kubernetes, microservicios ni sistemas distribuidos si no existe una necesidad real.
+
+## Requisitos generales
+- Código modular.
+- Separación de responsabilidades.
+- Configuración centralizada.
+- Variables de entorno.
+- Tipado consistente cuando corresponda.
+- Componentes reutilizables.
+- Migraciones reproducibles.
+- Gestión de errores.
+- Documentación clara.
+- Arquitectura preparada para añadir funciones sin reconstruir todo el producto.
+
+No simules persistencia con localStorage para datos que deban compartirse entre usuarios.
+
+---
+
+# 15. MODELO DE DATOS Y REGLAS DE NEGOCIO
+
+Diseña el esquema de datos necesario para las funciones implementadas.
+
+Considera entidades como:
+- Usuarios.
+- Perfiles.
+- Roles y permisos.
+- Proyectos.
+- Categorías.
+- Tecnologías.
+- Servicios.
+- Solicitudes comerciales.
+- Reseñas.
+- Recomendaciones.
+- Reportes.
+- Publicaciones.
+- Comentarios.
+- Reacciones.
+- Etiquetas.
+- Publicaciones guardadas.
+- Seguimientos.
+- Notificaciones.
+- Retos.
+- Proyectos colaborativos.
+- Artículos.
+- Denuncias.
+- Acciones de moderación.
+- Configuración.
+
+Define relaciones, identificadores, fechas, estados y restricciones.
+
+Implementa:
+- Integridad referencial.
+- Prevención de reacciones duplicadas.
+- Identificadores únicos.
+- Control de permisos.
+- Eliminación o anonimización conforme a la política de conservación.
+- Paginación de consultas.
+- Índices para búsquedas frecuentes.
+- Transacciones para operaciones que deban ser consistentes.
+
+No crees todas las tablas por anticipado sin una necesidad funcional. Implementa el modelo de forma incremental, manteniendo coherencia.
+
+---
+
+# 16. SEGURIDAD Y PROTECCIÓN DE DATOS
+
+La seguridad es un requisito obligatorio.
+
+Implementa controles apropiados contra:
+- XSS.
+- Inyección SQL.
+- CSRF cuando corresponda.
+- Acceso no autorizado.
+- Escalada de privilegios.
+- Robo o exposición de sesiones.
+- Abuso de endpoints.
+- Spam automatizado.
+- Subida de archivos peligrosos.
+- Exposición de información privada.
+- Manipulación de identificadores y permisos.
+
+Requisitos adicionales:
+- Validación en servidor.
+- Consultas parametrizadas.
+- Autenticación segura.
+- Gestión adecuada de sesiones.
+- Hash seguro de contraseñas si se administran directamente.
+- Protección de secretos.
+- Límites de frecuencia.
+- Restricciones de subida de archivos.
+- Políticas de acceso a datos.
+- Cabeceras de seguridad apropiadas.
+- Registro de acciones administrativas.
+- Mensajes de error sin información sensible.
+- Copias de seguridad cuando el alojamiento lo permita.
+
+Nunca expongas credenciales ni claves privadas en el frontend.
+
+No ejecutes código enviado por usuarios.
+
+No confíes en datos, roles o permisos proporcionados únicamente por el cliente.
+
+Si se integran servicios de terceros, revisa qué datos reciben y qué permisos necesitan.
+
+---
+
+# 17. PRIVACIDAD Y POLÍTICAS DE LA PLATAFORMA
+
+Prepara páginas para:
+- Política de privacidad.
+- Términos de uso.
+- Normas de la comunidad.
+- Política de cookies cuando corresponda.
+- Información de contacto.
+- Procedimiento de denuncias y moderación.
+
+Los textos deben corresponder a las funciones reales y a la jurisdicción aplicable.
+
+No afirmes cumplimiento legal o certificaciones que no hayan sido verificadas.
+
+Recopila únicamente los datos necesarios.
+
+Define políticas de conservación y eliminación de datos.
+
+Distingue entre información pública, privada y administrativa.
+
+No publiques correos electrónicos privados, mensajes privados ni información confidencial de otros usuarios.
+
+---
+
+# 18. ACCESIBILIDAD Y DISEÑO RESPONSIVE
+
+La plataforma debe funcionar en:
+- Móviles pequeños.
+- Móviles grandes.
+- Tabletas.
+- Portátiles.
+- Monitores de escritorio.
+
+Implementa:
+- Diseño mobile-first.
+- HTML semántico.
+- Navegación por teclado.
+- Indicadores de foco.
+- Etiquetas accesibles.
+- Contraste suficiente.
+- Texto alternativo.
+- Formularios comprensibles.
+- Mensajes de error accesibles.
+- Gestión correcta del foco en diálogos.
+- Estados interactivos distinguibles.
+- Respeto a movimiento reducido.
+- Tamaños táctiles apropiados.
+
+Utiliza WCAG 2.2 AA como objetivo de accesibilidad y comprueba los criterios aplicables.
+
+No afirmes conformidad total sin haberla evaluado.
+
+---
+
+# 19. SEO, RENDIMIENTO Y COMPARTICIÓN
+
+Optimiza las páginas públicas para motores de búsqueda y redes sociales.
+
+Incluye:
+- Títulos y descripciones adecuados.
+- Metadatos Open Graph.
+- URLs legibles.
+- Jerarquía semántica.
+- Sitemap cuando corresponda.
+- Robots.txt.
+- Canonicalización cuando sea necesaria.
+- Favicon.
+- Imágenes optimizadas.
+- Texto alternativo.
+- Carga diferida de recursos.
+- Páginas 404.
+- Control de indexación de áreas privadas.
+- Datos estructurados únicamente cuando sean apropiados y verídicos.
+
+La comunidad debe tener una estrategia de indexación consciente: las páginas públicas podrán indexarse cuando corresponda, pero los perfiles privados, mensajes privados y áreas administrativas nunca deben exponerse.
+
+Optimiza las métricas Core Web Vitals.
+
+Evita cargar bibliotecas, fuentes, vídeos y animaciones innecesarias.
+
+---
+
+# 20. SISTEMA DE CALIDAD Y PRUEBAS
+
+Antes de considerar terminada cualquier funcionalidad, verifica su funcionamiento.
+
+Incluye pruebas para:
+
+## Funcionalidad
+- Navegación.
+- Formularios.
+- Búsqueda.
+- Filtros.
+- Paginación.
+- Creación y edición de contenido.
+- Persistencia de datos.
+- Autenticación.
+- Recuperación de cuenta.
+- Permisos.
+- Reacciones.
+- Comentarios.
+- Notificaciones.
+- Moderación.
+- Solicitudes comerciales.
+
+## Seguridad
+- Acceso no autorizado.
+- Manipulación de roles.
+- Datos inválidos.
+- Reacciones duplicadas.
+- Contenido malicioso.
+- Subidas de archivos.
+- Límites de frecuencia.
+- Acceso a datos privados.
+
+## Experiencia
+- Escritorio.
+- Tableta.
+- Móvil.
+- Teclado.
+- Lectores de pantalla cuando sea posible.
+- Estados de carga.
+- Estados vacíos.
+- Errores recuperables.
+
+## Calidad del código
+- Errores de compilación.
+- Errores de consola.
+- Dependencias.
+- Componentes duplicados.
+- Tipado.
+- Manejo de excepciones.
+- Pruebas automatizadas.
+
+Utiliza pruebas unitarias, de integración y de extremo a extremo en proporción al alcance.
+
+No afirmes que las pruebas se han superado si no se han ejecutado.
+
+Documenta los defectos pendientes y su prioridad.
+
+---
+
+# 21. PLAN DE IMPLEMENTACIÓN POR FASES
+
+Desarrolla NEBULØN de forma incremental para reducir errores y evitar construir demasiadas funciones sin verificar.
+
+## FASE 1 — IDENTIDAD Y EXPERIENCIA PRINCIPAL
+- Sistema de diseño.
+- Logotipo y tratamiento visual de NEBULØN.
+- Página de inicio.
+- Navegación.
+- Portafolio.
+- Servicios.
+- Sobre la marca.
+- Contacto.
+- Diseño responsive.
+
+## FASE 2 — INFRAESTRUCTURA Y ADMINISTRACIÓN
+- Backend.
+- Base de datos.
+- Autenticación administrativa.
+- Gestión de proyectos.
+- Gestión de servicios.
+- Solicitudes comerciales.
+- Configuración de marca.
+
+## FASE 3 — COMUNIDAD
+- Registro y perfiles.
+- Categorías.
+- Publicaciones.
+- Preguntas y respuestas.
+- Comentarios.
+- Reacciones.
+- Búsqueda.
+- Notificaciones.
+- Moderación y reportes.
+
+## FASE 4 — APRENDIZAJE Y COLABORACIÓN
+- Artículos.
+- Tutoriales.
+- Retos.
+- Proyectos colaborativos.
+- Recursos educativos.
+
+## FASE 5 — SEGURIDAD Y LANZAMIENTO
+- Pruebas integrales.
+- Auditoría de permisos.
+- Optimización de rendimiento.
+- SEO.
+- Accesibilidad.
+- Políticas.
+- Copias de seguridad cuando estén disponibles.
+- Despliegue.
+- Documentación.
+- Plan de mantenimiento.
+
+Las fases pueden ajustarse si existe una dependencia técnica, pero no omitas pruebas de seguridad ni publiques funciones críticas sin verificarlas.
+
+---
+
+# 22. ALCANCE DE LA PRIMERA VERSIÓN
+
+Prioriza una primera versión publicable y profesional.
+
+Debe incluir:
+- Marca NEBULØN.
+- Página de inicio.
+- Portafolio.
+- Servicios.
+- Contacto.
+- Panel administrativo básico.
+- Base de datos si las funciones lo requieren.
+- Sistema de cuentas para la comunidad.
+- Publicaciones y comentarios.
+- Moderación básica.
+- Reseñas y reportes.
+- Normas y privacidad.
+- Responsive design.
+- Documentación de despliegue.
+
+Las funciones avanzadas, como mensajería privada, aplicaciones móviles nativas, videollamadas, ejecución de código y sistemas complejos de reputación, deben quedar para etapas posteriores salvo que se justifiquen.
+
+No añadas funcionalidades solo porque parezcan impresionantes. Cada función debe aportar valor y poder mantenerse.
+
+---
+
+# 23. DOCUMENTACIÓN Y ENTREGA
+
+Entrega:
+
+1. Código fuente completo.
+2. Estructura clara de carpetas.
+3. Instrucciones de instalación.
+4. Instrucciones de desarrollo local.
+5. Archivo de ejemplo de variables de entorno sin secretos.
+6. Configuración de base de datos.
+7. Migraciones.
+8. Instrucciones de creación segura del administrador inicial.
+9. Documentación de las APIs.
+10. Instrucciones de pruebas.
+11. Procedimiento de despliegue.
+12. Configuración de dominio cuando corresponda.
+13. Guía para publicar proyectos.
+14. Guía para gestionar la comunidad.
+15. Guía de moderación.
+16. Procedimiento de copias de seguridad cuando exista soporte.
+17. Lista de limitaciones conocidas.
+18. Resultados reales de las pruebas ejecutadas.
+
+No entregues secretos, credenciales ni contraseñas predeterminadas inseguras.
+
+Si una integración externa requiere claves, indica exactamente cómo configurarlas mediante variables de entorno.
+
+---
+
+# 24. CRITERIOS DE ACEPTACIÓN
+
+La plataforma solo puede considerarse lista para lanzamiento cuando:
+
+- La marca NEBULØN se representa correctamente.
+- La Ø se conserva en el logotipo y en la identidad visual.
+- Todas las páginas previstas están conectadas.
+- El diseño funciona en móviles y escritorio.
+- Los formularios se validan y muestran resultados reales.
+- Los datos persisten cuando corresponde.
+- El panel administrativo está protegido.
+- Los roles y permisos se verifican en el servidor.
+- La comunidad permite publicar e interactuar de forma funcional.
+- Las denuncias y acciones de moderación funcionan.
+- No se exponen datos privados.
+- No se ejecuta código arbitrario de usuarios.
+- No existen enlaces falsos presentados como funcionales.
+- Los estados de carga, error y contenido vacío están implementados.
+- La información ficticia de demostración está identificada.
+- Las pruebas críticas se han ejecutado.
+- Los defectos pendientes están documentados.
+- La instalación y el despliegue están explicados.
+
+Si un requisito no está implementado, identifícalo como pendiente. No lo presentes como una función terminada.
+
+---
+
+# 25. INSTRUCCIONES DE EJECUCIÓN PARA LA IA
+
+Empieza analizando el proyecto y las herramientas disponibles.
+
+Si existe un proyecto previo, inspecciona sus archivos antes de modificarlos. No elimines funcionalidades existentes sin justificación y autorización.
+
+Si comienzas desde cero, presenta primero:
+- Arquitectura propuesta.
+- Tecnologías elegidas.
+- Estructura de carpetas.
+- Modelo de datos inicial.
+- Diseño de navegación.
+- Plan de implementación.
+- Dependencias externas.
+- Riesgos técnicos principales.
+
+Después comienza a implementar.
+
+Trabaja por módulos, mantén coherencia entre frontend y backend y ejecuta las comprobaciones pertinentes a medida que avances.
+
+No te detengas después de presentar el plan si puedes continuar con la implementación.
+
+No cambies arbitrariamente el nombre, la identidad, la finalidad o la arquitectura acordada.
+
+Si surge una decisión menor, elige la opción más razonable y documenta el criterio. Pregunta únicamente cuando falte información esencial o exista una decisión que afecte de forma importante al alcance, la privacidad, el coste o la seguridad.
+
+No afirmes que has desplegado, conectado, enviado, guardado o probado algo si no tienes evidencia de que ocurrió.
+
+---
+
+# INSTRUCCIÓN FINAL
+
+Construye NEBULØN como un ecosistema tecnológico que pueda comenzar siendo mi plataforma personal y evolucionar hacia una comunidad de programación con proyectos, conocimiento, colaboración y oportunidades.
+
+Debe ser visualmente memorable, técnicamente sólido, fácil de administrar, seguro y útil tanto para clientes como para programadores.
+
+Quiero una experiencia de producto cuidada en cada detalle, desde el primer acceso hasta las funciones administrativas.
+
+Prioriza identidad, utilidad, seguridad, rendimiento, mantenibilidad y calidad real por encima de efectos visuales innecesarios.
+
+**NEBULØN no debe limitarse a mostrar lo que construyo. Debe ser el lugar donde pueda construir, compartir y conectar con otras personas.**
+
+Comienza con el análisis técnico y continúa hasta donde permitan las herramientas disponibles, verificando cada etapa y documentando honestamente cualquier limitación.
