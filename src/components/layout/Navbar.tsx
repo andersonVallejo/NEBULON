@@ -115,7 +115,7 @@ export const Navbar: React.FC = () => {
                 title="Cambiar rol activo para pruebas de permisos"
               >
                 <ShieldCheck className="w-3.5 h-3.5 text-violet-400" />
-                <span className="capitalize">{currentUser.role}</span>
+                <span className="capitalize">{currentUser?.role || 'admin'}</span>
                 <ChevronDown className="w-3 h-3 opacity-60" />
               </button>
 
@@ -132,13 +132,13 @@ export const Navbar: React.FC = () => {
                         setRoleMenuOpen(false);
                       }}
                       className={`w-full flex items-start gap-2.5 px-2.5 py-2 rounded text-left text-xs transition-colors ${
-                        currentUser.role === r.role
+                        (currentUser?.role || 'admin') === r.role
                           ? 'bg-violet-950/40 text-violet-300 border border-violet-800/40'
                           : 'text-slate-300 hover:bg-slate-800/60'
                       }`}
                     >
                       <div className="mt-0.5">
-                        {currentUser.role === r.role ? (
+                        {(currentUser?.role || 'admin') === r.role ? (
                           <Check className="w-3.5 h-3.5 text-violet-400" />
                         ) : (
                           <div className="w-3.5 h-3.5 rounded-full border border-slate-600" />
@@ -211,12 +211,12 @@ export const Navbar: React.FC = () => {
               type="button"
               onClick={() => setIsAuthModalOpen(true)}
               className="flex items-center gap-2 p-1 rounded-full border border-slate-700/80 hover:border-violet-500/80 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
-              title={`Perfil: ${currentUser.name} (${currentUser.role})`}
+              title={`Perfil: ${currentUser?.name || 'Anderson Vallejo'} (${currentUser?.role || 'admin'})`}
             >
               <img
-                src={currentUser.avatar}
-                alt={currentUser.name}
-                className="w-7 h-7 rounded-full object-cover"
+                src={currentUser?.avatar || '/assets/aistudio/image_72f5fead.png'}
+                alt={currentUser?.name || 'Anderson Vallejo'}
+                className="w-7 h-7 rounded-full object-cover object-[center_35%]"
                 referrerPolicy="no-referrer"
               />
             </button>

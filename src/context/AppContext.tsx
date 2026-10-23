@@ -143,8 +143,23 @@ function saveStorage<T>(key: string, data: T): void {
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currentView, setCurrentView] = useState<AppView>('home');
-  const [users, setUsers] = useState<UserProfile[]>(() => loadStorage('users', INITIAL_USERS));
-  const [currentUser, setCurrentUser] = useState<UserProfile>(() => users[0] || INITIAL_USERS[0]);
+  const [users, setUsers] = useState<UserProfile[]>(() => {
+    try {
+      const loaded = loadStorage('users', INITIAL_USERS);
+      if (Array.isArray(loaded) && loaded.length > 0) {
+        return loaded.map((u) =>
+          u && u.id === 'user_admin' ? { ...u, avatar: '/assets/aistudio/image_72f5fead.png' } : u
+        );
+      }
+      return INITIAL_USERS;
+    } catch {
+      return INITIAL_USERS;
+    }
+  });
+
+  const [currentUser, setCurrentUser] = useState<UserProfile>(() => {
+    return INITIAL_USERS[0];
+  });
 
   // Projects
   const [projects, setProjects] = useState<ProjectItem[]>(() => loadStorage('projects', INITIAL_PROJECTS));

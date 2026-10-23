@@ -14,9 +14,9 @@ export const AuthProfileModal: React.FC = () => {
   } = useApp();
 
   const [isEditing, setIsEditing] = useState(false);
-  const [editBio, setEditBio] = useState(currentUser.bio);
-  const [editTech, setEditTech] = useState(currentUser.favoriteTech.join(', '));
-  const [editLevel, setEditLevel] = useState(currentUser.experienceLevel);
+  const [editBio, setEditBio] = useState(currentUser?.bio || '');
+  const [editTech, setEditTech] = useState(currentUser?.favoriteTech?.join(', ') || '');
+  const [editLevel, setEditLevel] = useState(currentUser?.experienceLevel || 'Lead / Arquitecto');
   const [savedSuccess, setSavedSuccess] = useState(false);
 
   if (!isAuthModalOpen) return null;
@@ -73,21 +73,21 @@ export const AuthProfileModal: React.FC = () => {
           {/* User Header */}
           <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-950/50 border border-slate-800">
             <img
-              src={currentUser.avatar}
-              alt={currentUser.name}
-              className="w-14 h-14 rounded-full object-cover border-2 border-violet-500/50"
+              src={currentUser?.avatar || '/assets/aistudio/image_72f5fead.png'}
+              alt={currentUser?.name || 'Anderson Vallejo'}
+              className="w-14 h-14 rounded-full object-cover object-[center_35%] border-2 border-violet-500/50"
               referrerPolicy="no-referrer"
             />
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <h4 className="text-base font-bold text-white">{currentUser.name}</h4>
-                <span className="text-xs font-mono text-slate-400">@{currentUser.username}</span>
+                <h4 className="text-base font-bold text-white">{currentUser?.name || 'Anderson Vallejo'}</h4>
+                <span className="text-xs font-mono text-slate-400">@{currentUser?.username || 'anderson_nebulon'}</span>
               </div>
               <div className="flex items-center gap-2 font-mono text-[11px]">
                 <span className="px-2 py-0.5 rounded bg-violet-950/60 text-violet-300 border border-violet-800/40 uppercase">
-                  Rol: {currentUser.role}
+                  Rol: {currentUser?.role || 'admin'}
                 </span>
-                <span className="text-slate-500">Miembro desde {currentUser.joinedDate}</span>
+                <span className="text-slate-500">Miembro desde {currentUser?.joinedDate || 'Enero 2025'}</span>
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ export const AuthProfileModal: React.FC = () => {
                 <div>
                   <span className="font-mono text-slate-400 font-semibold block mb-1">Tecnologías:</span>
                   <div className="flex flex-wrap gap-1">
-                    {currentUser.favoriteTech.map((t) => (
+                    {(currentUser?.favoriteTech || []).map((t) => (
                       <span key={t} className="text-[11px] font-mono text-violet-300 bg-violet-950/50 px-2 py-0.5 rounded border border-violet-800/40">
                         {t}
                       </span>

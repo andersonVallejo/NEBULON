@@ -66,7 +66,7 @@ export const AdminView: React.FC = () => {
   });
 
   // Verify authorization
-  const isAuthorized = currentUser.role === 'admin' || currentUser.role === 'moderator';
+  const isAuthorized = currentUser?.role === 'admin' || currentUser?.role === 'moderator';
 
   if (!isAuthorized) {
     return (
@@ -77,7 +77,7 @@ export const AdminView: React.FC = () => {
         <div className="space-y-2">
           <h2 className="text-2xl font-bold text-white">Acceso Restringido al Panel Administrativo</h2>
           <p className="text-sm text-slate-300 leading-relaxed">
-            Tu cuenta actual está asignada al rol <strong className="text-violet-400 capitalize">{currentUser.role}</strong>. Las operaciones de gestión comercial, modificación de proyectos y cola de moderación requieren privilegios de Administrador o Moderador.
+            Tu cuenta actual está asignada al rol <strong className="text-violet-400 capitalize">{currentUser?.role || 'user'}</strong>. Las operaciones de gestión comercial, modificación de proyectos y cola de moderación requieren privilegios de Administrador o Moderador.
           </p>
         </div>
 
@@ -187,7 +187,7 @@ export const AdminView: React.FC = () => {
               Consola Administrativa
             </span>
             <span className="text-xs font-mono text-slate-400">
-              Sesión activa: <strong className="text-white">{currentUser.name}</strong> ({currentUser.role})
+              Sesión activa: <strong className="text-white">{currentUser?.name || 'Anderson Vallejo'}</strong> ({currentUser?.role || 'admin'})
             </span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">

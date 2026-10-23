@@ -42,15 +42,15 @@ export const HomeView: React.FC = () => {
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 text-xs font-mono rounded-full bg-violet-950/50 border border-violet-800/40 text-violet-300">
                 <span className="w-1.5 h-1.5 rounded-full bg-violet-400" />
-                <span>Marca Tecnológica & Comunidad de Programación</span>
+                <span>Desarrollo Web & Comunidad Dev</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1] text-balance">
-                Ingeniería de software con propósito, precisión y comunidad.
+                Creamos sitios web de alto impacto y la comunidad para impulsarlos.
               </h1>
 
               <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
-                Soy Anderson Vallejo. A través de <strong className="text-white font-mono">NEBULØN</strong> diseño y desarrollo plataformas web de alto rendimiento, comparto conocimientos prácticos y construyo un espacio colaborativo para programadores.
+                Soy Anderson Vallejo. A través de <strong className="text-white font-mono">NEBULØN</strong>, transformo ideas en páginas web modernas y escalables, mientras construyo una comunidad donde creadores y programadores colaboran y crecen juntos.
               </p>
 
               {/* Action Buttons */}

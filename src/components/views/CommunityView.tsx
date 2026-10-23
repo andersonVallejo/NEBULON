@@ -99,11 +99,11 @@ export const CommunityView: React.FC = () => {
   const filteredPosts = useMemo(() => {
     return posts.filter((post) => {
       // Hide post if moderated unless admin/moderator
-      if (post.isHidden && currentUser.role === 'user') return false;
+      if (post.isHidden && currentUser?.role === 'user') return false;
 
       const matchCat = selectedCategory === 'all' || post.categoryId === selectedCategory;
       const matchType = selectedType === 'all' || post.type === selectedType;
-      const matchSaved = !onlySaved || post.savedBy.includes(currentUser.id);
+      const matchSaved = !onlySaved || (currentUser?.id ? post.savedBy.includes(currentUser.id) : false);
       const query = searchQuery.toLowerCase().trim();
       const matchSearch =
         !query ||
@@ -218,9 +218,9 @@ export const CommunityView: React.FC = () => {
 
   // If a post is selected, render the dedicated Post Detail View
   if (selectedPost) {
-    const isAuthor = selectedPost.author.id === currentUser.id;
-    const canModerate = currentUser.role === 'admin' || currentUser.role === 'moderator';
-    const isSaved = selectedPost.savedBy.includes(currentUser.id);
+    const isAuthor = selectedPost.author.id === currentUser?.id;
+    const canModerate = currentUser?.role === 'admin' || currentUser?.role === 'moderator';
+    const isSaved = currentUser?.id ? selectedPost.savedBy.includes(currentUser.id) : false;
 
     return (
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-8 pb-24">
