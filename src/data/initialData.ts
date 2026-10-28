@@ -18,45 +18,19 @@ import {
   NotificationItem,
 } from '../types';
 
-export const INITIAL_USERS: UserProfile[] = [
+export const INITIAL_USERS: UserProfile[] =  [
   {
     id: 'user_admin',
     name: 'Anderson Vallejo',
-    username: 'anderson_nebulon',
+    username: 'andersonvallejo021',
     email: 'andersonvallejo021@gmail.com',
     avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png',
     role: 'admin',
-    bio: 'Fundador y arquitecto de software en NEBULØN. Especializado en sistemas web reactivos, arquitectura limpia y experiencias interactivas modernas.',
-    experienceLevel: 'Lead / Arquitecto',
-    favoriteTech: ['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'Docker'],
-    githubUrl: 'https://github.com',
-    linkedinUrl: 'https://linkedin.com',
-    joinedDate: 'Enero 2025',
-  },
-  {
-    id: 'user_mod',
-    name: 'Elena Rostova',
-    username: 'elena_code',
-    email: 'elena.rostova@example.com',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
-    role: 'moderator',
-    bio: 'Ingeniera frontend senior y moderadora técnica. Apasionada por los estándares de accesibilidad WCAG y la arquitectura de componentes.',
-    experienceLevel: 'Avanzado',
-    favoriteTech: ['TypeScript', 'Next.js', 'Web Accessibility', 'GraphQL'],
-    githubUrl: 'https://github.com',
-    joinedDate: 'Marzo 2025',
-  },
-  {
-    id: 'user_carlos',
-    name: 'Carlos Méndez',
-    username: 'cmendez_dev',
-    email: 'cmendez@example.com',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-    role: 'user',
-    bio: 'Desarrollador backend en formación continua. Explorando Python, FastAPI y microservicios.',
-    experienceLevel: 'Intermedio',
-    favoriteTech: ['Python', 'FastAPI', 'PostgreSQL', 'Linux'],
-    joinedDate: 'Junio 2025',
+    bio: 'Fundador de NEBULØN. Desarrollo de páginas y aplicaciones web.',
+    experienceLevel: 'Principiante',
+    favoriteTech: ['HTML', 'CSS', 'JavaScript', 'React'],
+    githubUrl: 'https://github.com/andersonVallejo',
+    joinedDate: 'Octubre 2026',
   },
 ];
 
@@ -500,38 +474,7 @@ export const INITIAL_SERVICES: ServiceItem[] = [
   }
 ];
 
-export const INITIAL_REQUESTS: ServiceRequest[] = [
-  {
-    id: 'req-001',
-    clientName: 'Santiago Morales',
-    clientEmail: 'santiago@innovahealth.com',
-    preferredContact: 'email',
-    projectType: 'Sistemas de reservas y citas',
-    description: 'Necesitamos renovar el sistema de citas de nuestra red de consultorios para permitir selección de especialista y pago presencial o en línea.',
-    desiredFeatures: 'Sincronización con Google Calendar, confirmaciones por WhatsApp y panel de administración para médicos.',
-    budgetRange: '$2,500 - $4,000 USD',
-    timeline: '6 semanas',
-    referenceLinks: 'https://innovahealth.com',
-    status: 'Propuesta enviada',
-    privateNotes: 'Se presentó propuesta técnica el 18 de octubre. Cliente revisando con el director médico.',
-    createdAt: '2026-10-15T14:30:00Z',
-  },
-  {
-    id: 'req-002',
-    clientName: 'Mariana Duarte',
-    clientEmail: 'mariana.duarte@studiozen.co',
-    preferredContact: 'whatsapp',
-    projectType: 'Landing pages',
-    description: 'Lanzamiento de una nueva línea de productos ergonómicos para programadores. Buscamos diseño oscuro, minimalista y ultra rápido.',
-    desiredFeatures: 'Simulador de postura 3D ligero, formulario de lista de espera con contador regresivo.',
-    budgetRange: '$1,200 - $2,000 USD',
-    timeline: '3 semanas',
-    referenceLinks: 'https://behance.net/sample-ergonomic',
-    status: 'En revisión',
-    privateNotes: 'Revisando requerimientos del simulador 3D para definir si se usa Three.js optimizado.',
-    createdAt: '2026-10-20T09:15:00Z',
-  },
-];
+export const INITIAL_REQUESTS: ServiceRequest[] =  []];
 
 export const INITIAL_CATEGORIES: CommunityCategory[] = [
   { id: 'cat-principiantes', name: 'Programación para principiantes', slug: 'principiantes', description: 'Primeros pasos, dudas conceptuales y orientación para comenzar en el desarrollo.', iconName: 'Compass' },
@@ -546,144 +489,9 @@ export const INITIAL_CATEGORIES: CommunityCategory[] = [
   { id: 'cat-challenges', name: 'Retos y desafíos', slug: 'retos', description: 'Problemas de lógica, algoritmos y ejercicios semanales de programación.', iconName: 'Award' },
 ];
 
-export const INITIAL_POSTS: CommunityPost[] = [
-  {
-    id: 'post-101',
-    type: 'question',
-    title: '¿Cómo optimizar una consulta compleja con JOIN y agregaciones en PostgreSQL?',
-    content: 'Hola comunidad. Tengo una tabla de órdenes y otra de ítems con más de 2 millones de registros. Cuando intento agrupar por usuario y calcular el total de compras del mes, la consulta toma más de 4 segundos.',
-    codeSnippet: {
-      language: 'sql',
-      code: `EXPLAIN ANALYZE
-SELECT u.id, u.name, SUM(oi.price * oi.quantity) as total_spent
-FROM users u
-JOIN orders o ON o.user_id = u.id
-JOIN order_items oi ON oi.order_id = o.id
-WHERE o.created_at >= '2026-09-01'
-GROUP BY u.id, u.name
-ORDER BY total_spent DESC
-LIMIT 50;`,
-      errorMessage: 'Execution Time: 4230.12 ms (Seq Scan on orders)',
-      expectedResult: 'Tiempo de ejecución inferior a 150ms utilizando índices apropiados.'
-    },
-    author: {
-      id: 'user_carlos',
-      name: 'Carlos Méndez',
-      username: 'cmendez_dev',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-      role: 'user'
-    },
-    categoryId: 'cat-databases',
-    tags: ['postgresql', 'sql', 'optimizacion', 'indices'],
-    reactions: {
-      like: ['user_admin', 'user_mod'],
-      idea: ['user_admin'],
-    },
-    savedBy: ['user_admin'],
-    acceptedAnswerId: 'comment-201',
-    createdAt: '2026-10-18T11:20:00Z',
-  },
-  {
-    id: 'post-102',
-    type: 'discussion',
-    title: 'Buenas prácticas para estructurar tipos en proyectos grandes de TypeScript',
-    content: 'En equipos en crecimiento suele haber debates sobre si centralizar los tipos en una sola carpeta `types/` o mantenerlos cerca de cada componente o módulo de dominio. ¿Qué arquitectura les ha funcionado mejor para evitar dependencias circulares y facilitar el refactor?',
-    author: {
-      id: 'user_mod',
-      name: 'Elena Rostova',
-      username: 'elena_code',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
-      role: 'moderator'
-    },
-    categoryId: 'cat-frontend',
-    tags: ['typescript', 'arquitectura', 'buenas-practicas'],
-    reactions: {
-      like: ['user_admin', 'user_carlos'],
-      fire: ['user_admin'],
-    },
-    savedBy: ['user_carlos'],
-    createdAt: '2026-10-19T16:45:00Z',
-  },
-  {
-    id: 'post-103',
-    type: 'showcase',
-    title: 'Comparto mi implementación de un generador de paletas accesibles con Canvas',
-    content: 'Quería compartir una pequeña herramienta que calcula automáticamente la relación de contraste WCAG 2.2 AA entre pares de colores en tiempo real sin dependencias externas.',
-    codeSnippet: {
-      language: 'typescript',
-      code: `function getLuminance(r: number, g: number, b: number): number {
-  const [rs, gs, bs] = [r, g, b].map(c => {
-    c = c / 255;
-    return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
-  });
-  return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
-}
+export const INITIAL_POSTS: CommunityPost[] =  []];
 
-export function getContrastRatio(rgb1: [number, number, number], rgb2: [number, number, number]): number {
-  const lum1 = getLuminance(...rgb1);
-  const lum2 = getLuminance(...rgb2);
-  const brightest = Math.max(lum1, lum2);
-  const darkest = Math.min(lum1, lum2);
-  return Number(((brightest + 0.05) / (darkest + 0.05)).toFixed(2));
-}`
-    },
-    author: {
-      id: 'user_admin',
-      name: 'Anderson Vallejo',
-      username: 'anderson_nebulon',
-      avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png',
-      role: 'admin'
-    },
-    categoryId: 'cat-frontend',
-    tags: ['accessibility', 'wcag', 'typescript', 'canvas'],
-    reactions: {
-      like: ['user_carlos', 'user_mod'],
-      fire: ['user_carlos', 'user_mod'],
-    },
-    savedBy: ['user_carlos', 'user_mod'],
-    createdAt: '2026-10-21T10:10:00Z',
-  }
-];
-
-export const INITIAL_COMMENTS: CommunityComment[] = [
-  {
-    id: 'comment-201',
-    postId: 'post-101',
-    author: {
-      id: 'user_admin',
-      name: 'Anderson Vallejo',
-      username: 'anderson_nebulon',
-      avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png',
-      role: 'admin'
-    },
-    content: 'El problema principal es el Sequential Scan en la tabla orders. Necesitas un índice compuesto que cubra el campo del filtro y la clave foránea del usuario.',
-    codeSnippet: {
-      language: 'sql',
-      code: `-- 1. Índice compuesto para orders
-CREATE INDEX CONCURRENTLY idx_orders_user_created 
-ON orders (created_at DESC, user_id);
-
--- 2. Asegúrate de tener índice en order_items
-CREATE INDEX CONCURRENTLY idx_order_items_order_id 
-ON order_items (order_id) INCLUDE (price, quantity);`
-    },
-    isAcceptedAnswer: true,
-    createdAt: '2026-10-18T13:05:00Z'
-  },
-  {
-    id: 'comment-202',
-    postId: 'post-102',
-    author: {
-      id: 'user_admin',
-      name: 'Anderson Vallejo',
-      username: 'anderson_nebulon',
-      avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png',
-      role: 'admin'
-    },
-    content: 'Recomiendo un enfoque híbrido: contratos de dominio compartidos (entidades principales de la base de datos o DTOs del backend) en una carpeta raíz como `src/types/domain/`, y tipos específicos de props de componentes junto al propio archivo `.tsx`. Esto evita tener que abrir tres carpetas para entender un solo componente.',
-    createdAt: '2026-10-19T18:15:00Z'
-  }
-];
+export const INITIAL_COMMENTS: CommunityComment[] =  []];
 
 export const INITIAL_CHALLENGES: CodingChallenge[] = [
   {
@@ -874,58 +682,8 @@ console.log(user?.profile?.name ?? 'Invitado');`
   }
 ];
 
-export const INITIAL_REVIEWS: ReviewItem[] = [
-  {
-    id: 'rev-01',
-    authorName: 'Camila Villalobos',
-    roleOrCompany: 'Directora de Tecnología, MedTech Solutions',
-    serviceTitle: 'Desarrollo de Aplicaciones Web a Medida',
-    rating: 5,
-    comment: 'Trabajar con NEBULØN fue un punto de inflexión para nuestro equipo. La arquitectura entregada no solo cumplió los plazos acordados, sino que la claridad del código facilitó enormemente la integración con nuestros sistemas existentes.',
-    status: 'Aprobada',
-    date: '12 de Septiembre, 2026'
-  },
-  {
-    id: 'rev-02',
-    authorName: 'Javier Restrepo',
-    roleOrCompany: 'Fundador, FinFlow Analytics',
-    serviceTitle: 'Landing Pages de Alta Conversión',
-    rating: 5,
-    comment: 'La velocidad de carga y la atención al detalle en tipografía y animaciones superaron nuestras expectativas. Nuestra tasa de conversión en la campaña de lanzamiento aumentó un 32% respecto al sitio anterior.',
-    status: 'Aprobada',
-    date: '28 de Agosto, 2026'
-  }
-];
+export const INITIAL_REVIEWS: ReviewItem[] =  []];
 
-export const INITIAL_REPORTS: PlatformReport[] = [
-  {
-    id: 'rep-01',
-    type: 'suggestion',
-    title: 'Sugerencia: Filtro por etiqueta en el Centro de Aprendizaje',
-    description: 'Sería muy útil poder seleccionar múltiples etiquetas simultáneas (ej. TypeScript + React) al buscar artículos técnicos.',
-    contactEmail: 'cmendez@example.com',
-    status: 'En investigación',
-    createdAt: '2026-10-21T15:00:00Z'
-  }
-];
+export const INITIAL_REPORTS: PlatformReport[] =  []];
 
-export const INITIAL_NOTIFICATIONS: NotificationItem[] = [
-  {
-    id: 'notif-01',
-    userId: 'user_admin',
-    title: 'Nueva solicitud de servicio',
-    message: 'Santiago Morales ha solicitado cotización para "Sistemas de reservas y citas".',
-    targetView: 'admin',
-    read: false,
-    createdAt: '2026-10-20T10:00:00Z'
-  },
-  {
-    id: 'notif-02',
-    userId: 'user_admin',
-    title: 'Respuesta aceptada en la comunidad',
-    message: 'Tu solución técnica en el post de PostgreSQL fue marcada como aceptada por Carlos Méndez.',
-    targetView: 'community',
-    read: false,
-    createdAt: '2026-10-18T14:10:00Z'
-  }
-];
+export const INITIAL_NOTIFICATIONS: NotificationItem[] =  []];

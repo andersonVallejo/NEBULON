@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
-import { UserRole } from '../../types';
-import { X, ShieldCheck, UserCheck, Edit3, Check, Save } from 'lucide-react';
+import { X, UserCheck, Edit3, Check, Save } from 'lucide-react';
 
 export const AuthProfileModal: React.FC = () => {
   const { 
@@ -9,8 +8,6 @@ export const AuthProfileModal: React.FC = () => {
     setIsAuthModalOpen, 
     currentUser, 
     updateCurrentUserProfile,
-    switchUserRole,
-    users
   } = useApp();
 
   const [isEditing, setIsEditing] = useState(false);
@@ -32,12 +29,6 @@ export const AuthProfileModal: React.FC = () => {
     setSavedSuccess(true);
     setTimeout(() => setSavedSuccess(false), 2500);
   };
-
-  const roles: { role: UserRole; label: string; desc: string }[] = [
-    { role: 'admin', label: 'Administrador (Anderson Vallejo)', desc: 'Control total de proyectos, solicitudes comerciales y moderación' },
-    { role: 'moderator', label: 'Moderador Técnico (Elena Rostova)', desc: 'Capacidad de ocultar publicaciones denunciadas y supervisar convivencia' },
-    { role: 'user', label: 'Miembro Comunitario (Carlos Méndez)', desc: 'Publicar dudas, interactuar, guardar favoritos y responder' },
-  ];
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm overflow-y-auto">
@@ -81,11 +72,11 @@ export const AuthProfileModal: React.FC = () => {
             <div className="space-y-1">
               <div className="flex items-center gap-2">
                 <h4 className="text-base font-bold text-white">{currentUser?.name || 'Anderson Vallejo'}</h4>
-                <span className="text-xs font-mono text-slate-400">@{currentUser?.username || 'anderson_nebulon'}</span>
+                <span className="text-xs font-mono text-slate-400">{currentUser?.email || 'andersonvallejo021@gmail.com'}</span>
               </div>
               <div className="flex items-center gap-2 font-mono text-[11px]">
                 <span className="px-2 py-0.5 rounded bg-violet-950/60 text-violet-300 border border-violet-800/40 uppercase">
-                  Rol: {currentUser?.role || 'admin'}
+                  Rol: {currentUser?.role === 'admin' ? 'Administrador' : 'Miembro'}
                 </span>
                 <span className="text-slate-500">Miembro desde {currentUser?.joinedDate || 'Enero 2025'}</span>
               </div>
@@ -185,43 +176,6 @@ export const AuthProfileModal: React.FC = () => {
               </button>
             </div>
           )}
-
-          {/* Role Switching Sandbox for RBAC Testing */}
-          <div className="pt-4 border-t border-slate-800 space-y-3">
-            <div className="flex items-center gap-2 text-xs font-mono text-slate-300 uppercase tracking-wider font-semibold">
-              <ShieldCheck className="w-4 h-4 text-violet-400" />
-              <span>Simulador de Roles de Usuario (RBAC)</span>
-            </div>
-            <p className="text-[11px] text-slate-400">
-              Permite alternar instantáneamente la identidad activa para comprobar cómo se comportan los permisos en la comunidad y en el panel administrativo.
-            </p>
-
-            <div className="space-y-2">
-              {roles.map((r) => (
-                <button
-                  key={r.role}
-                  onClick={() => switchUserRole(r.role)}
-                  className={`w-full p-3 rounded-xl text-left border transition-all flex items-start gap-3 ${
-                    currentUser.role === r.role
-                      ? 'bg-violet-950/40 border-violet-700/60 text-white'
-                      : 'bg-slate-950/30 border-slate-800 text-slate-300 hover:bg-slate-900/60'
-                  }`}
-                >
-                  <div className="mt-0.5">
-                    {currentUser.role === r.role ? (
-                      <Check className="w-4 h-4 text-violet-400" />
-                    ) : (
-                      <div className="w-4 h-4 rounded-full border border-slate-600" />
-                    )}
-                  </div>
-                  <div>
-                    <div className="font-semibold text-xs">{r.label}</div>
-                    <div className="text-[11px] text-slate-400 leading-tight mt-0.5">{r.desc}</div>
-                  </div>
-                </button>
-              ))}
-            </div>
-          </div>
 
         </div>
 

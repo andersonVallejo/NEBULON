@@ -145,13 +145,18 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [currentView, setCurrentView] = useState<AppView>('home');
   const [users, setUsers] = useState<UserProfile[]>(() => {
     try {
-      const loaded = loadStorage('users', INITIAL_USERS);
-      if (Array.isArray(loaded) && loaded.length > 0) {
-        return loaded.map((u) =>
-          u && u.id === 'user_admin' ? { ...u, avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png' } : u
-        );
-      }
-      return INITIAL_USERS;
+      const loaded = loadStorage<UserProfile[]>('users', INITIAL_USERS);
+      const admin = Array.isArray(loaded) ? loaded.find((u) => u?.id === 'user_admin') : undefined;
+      const cleanAdmin = {
+        ...INITIAL_USERS[0],
+        ...(admin || {}),
+        name: 'Anderson Vallejo',
+        email: 'andersonvallejo021@gmail.com',
+        username: 'andersonvallejo021',
+        role: 'admin' as UserRole,
+        avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png',
+      };
+      return [cleanAdmin];
     } catch {
       return INITIAL_USERS;
     }
@@ -184,12 +189,21 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   // Services
   const [services] = useState<ServiceItem[]>(INITIAL_SERVICES);
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
-  const [serviceRequests, setServiceRequests] = useState<ServiceRequest[]>(() => loadStorage('requests', INITIAL_REQUESTS));
+  const [serviceRequests, setServiceRequests] = useState<ServiceRequest[]>(() => {
+    const stored = loadStorage<ServiceRequest[]>('requests', INITIAL_REQUESTS);
+    return Array.isArray(stored) ? stored.filter((request) => !['req-001', 'req-002'].includes(request.id)) : [];
+  });
 
   // Community
   const [categories] = useState<CommunityCategory[]>(INITIAL_CATEGORIES);
-  const [posts, setPosts] = useState<CommunityPost[]>(() => loadStorage('posts', INITIAL_POSTS));
-  const [comments, setComments] = useState<CommunityComment[]>(() => loadStorage('comments', INITIAL_COMMENTS));
+  const [posts, setPosts] = useState<CommunityPost[]>(() => {
+    const stored = loadStorage<CommunityPost[]>('posts', INITIAL_POSTS);
+    return Array.isArray(stored) ? stored.filter((post) => !['post-101', 'post-102', 'post-103'].includes(post.id)) : [];
+  });
+  const [comments, setComments] = useState<CommunityComment[]>(() => {
+    const stored = loadStorage<CommunityComment[]>('comments', INITIAL_COMMENTS);
+    return Array.isArray(stored) ? stored.filter((comment) => !['comment-201', 'comment-202'].includes(comment.id)) : [];
+  });
   const [selectedPost, setSelectedPost] = useState<CommunityPost | null>(null);
 
   // Challenges
@@ -203,11 +217,20 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [selectedArticle, setSelectedArticle] = useState<ArticleItem | null>(null);
 
   // Reviews & Reports
-  const [reviews, setReviews] = useState<ReviewItem[]>(() => loadStorage('reviews', INITIAL_REVIEWS));
-  const [reports, setReports] = useState<PlatformReport[]>(() => loadStorage('reports', INITIAL_REPORTS));
+  const [reviews, setReviews] = useState<ReviewItem[]>(() => {
+    const stored = loadStorage<ReviewItem[]>('reviews', INITIAL_REVIEWS);
+    return Array.isArray(stored) ? stored.filter((review) => !['rev-01', 'rev-02'].includes(review.id)) : [];
+  });
+  const [reports, setReports] = useState<PlatformReport[]>(() => {
+    const stored = loadStorage<PlatformReport[]>('reports', INITIAL_REPORTS);
+    return Array.isArray(stored) ? stored.filter((report) => report.id !== 'rep-01') : [];
+  });
 
   // Notifications
-  const [notifications, setNotifications] = useState<NotificationItem[]>(() => loadStorage('notifications', INITIAL_NOTIFICATIONS));
+  const [notifications, setNotifications] = useState<NotificationItem[]>(() => {
+    const stored = loadStorage<NotificationItem[]>('notifications', INITIAL_NOTIFICATIONS);
+    return Array.isArray(stored) ? stored.filter((notification) => !['notif-01', 'notif-02'].includes(notification.id)) : [];
+  });
 
   // Modals
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
