@@ -32,7 +32,7 @@ export const NebulonLogo: React.FC<NebulonLogoProps> = ({
   const IconMark = (
     <div className={`relative flex items-center justify-center shrink-0 rounded-lg overflow-hidden bg-black/90 border border-violet-500/40 shadow-[0_0_12px_rgba(139,92,246,0.4)] ${iconSizes[size]}`}>
       <img
-        src="/assets/aistudio/Captura_de_pantalla_2026-10-22_203812_f46af181.png"
+        src={import.meta.env.BASE_URL + 'assets/aistudio/Captura_de_pantalla_2026-10-22_203812_f46af181.png'}
         alt="NEBULØN Logo"
         className="w-full h-full object-cover scale-105"
         referrerPolicy="no-referrer"
