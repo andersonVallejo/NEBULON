@@ -474,38 +474,7 @@ export const INITIAL_SERVICES: ServiceItem[] = [
   }
 ];
 
-export const INITIAL_REQUESTS: ServiceRequest[] = [
-  {
-    id: 'req-001',
-    clientName: 'Santiago Morales',
-    clientEmail: 'santiago@innovahealth.com',
-    preferredContact: 'email',
-    projectType: 'Sistemas de reservas y citas',
-    description: 'Necesitamos renovar el sistema de citas de nuestra red de consultorios para permitir selección de especialista y pago presencial o en línea.',
-    desiredFeatures: 'Sincronización con Google Calendar, confirmaciones por WhatsApp y panel de administración para médicos.',
-    budgetRange: '$2,500 - $4,000 USD',
-    timeline: '6 semanas',
-    referenceLinks: 'https://innovahealth.com',
-    status: 'Propuesta enviada',
-    privateNotes: 'Se presentó propuesta técnica el 18 de octubre. Cliente revisando con el director médico.',
-    createdAt: '2026-10-15T14:30:00Z',
-  },
-  {
-    id: 'req-002',
-    clientName: 'Mariana Duarte',
-    clientEmail: 'mariana.duarte@studiozen.co',
-    preferredContact: 'whatsapp',
-    projectType: 'Landing pages',
-    description: 'Lanzamiento de una nueva línea de productos ergonómicos para programadores. Buscamos diseño oscuro, minimalista y ultra rápido.',
-    desiredFeatures: 'Simulador de postura 3D ligero, formulario de lista de espera con contador regresivo.',
-    budgetRange: '$1,200 - $2,000 USD',
-    timeline: '3 semanas',
-    referenceLinks: 'https://behance.net/sample-ergonomic',
-    status: 'En revisión',
-    privateNotes: 'Revisando requerimientos del simulador 3D para definir si se usa Three.js optimizado.',
-    createdAt: '2026-10-20T09:15:00Z',
-  },
-];
+export const INITIAL_REQUESTS: ServiceRequest[] =  []];
 
 export const INITIAL_CATEGORIES: CommunityCategory[] = [
   { id: 'cat-principiantes', name: 'Programación para principiantes', slug: 'principiantes', description: 'Primeros pasos, dudas conceptuales y orientación para comenzar en el desarrollo.', iconName: 'Compass' },
@@ -715,35 +684,6 @@ console.log(user?.profile?.name ?? 'Invitado');`
 
 export const INITIAL_REVIEWS: ReviewItem[] =  []];
 
-export const INITIAL_REPORTS: PlatformReport[] = [
-  {
-    id: 'rep-01',
-    type: 'suggestion',
-    title: 'Sugerencia: Filtro por etiqueta en el Centro de Aprendizaje',
-    description: 'Sería muy útil poder seleccionar múltiples etiquetas simultáneas (ej. TypeScript + React) al buscar artículos técnicos.',
-    contactEmail: 'cmendez@example.com',
-    status: 'En investigación',
-    createdAt: '2026-10-21T15:00:00Z'
-  }
-];
+export const INITIAL_REPORTS: PlatformReport[] =  []];
 
-export const INITIAL_NOTIFICATIONS: NotificationItem[] = [
-  {
-    id: 'notif-01',
-    userId: 'user_admin',
-    title: 'Nueva solicitud de servicio',
-    message: 'Santiago Morales ha solicitado cotización para "Sistemas de reservas y citas".',
-    targetView: 'admin',
-    read: false,
-    createdAt: '2026-10-20T10:00:00Z'
-  },
-  {
-    id: 'notif-02',
-    userId: 'user_admin',
-    title: 'Respuesta aceptada en la comunidad',
-    message: 'Tu solución técnica en el post de PostgreSQL fue marcada como aceptada por Carlos Méndez.',
-    targetView: 'community',
-    read: false,
-    createdAt: '2026-10-18T14:10:00Z'
-  }
-];
+export const INITIAL_NOTIFICATIONS: NotificationItem[] =  []];
