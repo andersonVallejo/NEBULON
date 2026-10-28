@@ -55,7 +55,7 @@ export const AdminView: React.FC = () => {
     summary: '',
     category: 'Aplicaciones web' as any,
     status: 'Publicado' as ProjectStatus,
-    imageUrl: '/src/assets/images/project_saas_platform_1792719210711.jpg',
+    imageUrl: '/NEBULON/assets/images/project_saas_platform_1792719210711.jpg',
     problemSolved: '',
     architectureDecisions: '',
     features: '',
