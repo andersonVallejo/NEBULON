@@ -214,7 +214,7 @@ export const Navbar: React.FC = () => {
               title={`Perfil: ${currentUser?.name || 'Anderson Vallejo'} (${currentUser?.role || 'admin'})`}
             >
               <img
-                src={currentUser?.avatar || '/assets/aistudio/image_72f5fead.png'}
+                src={currentUser?.avatar || import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png'}
                 alt={currentUser?.name || 'Anderson Vallejo'}
                 className="w-7 h-7 rounded-full object-cover object-[center_35%]"
                 referrerPolicy="no-referrer"
