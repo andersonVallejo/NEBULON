@@ -94,7 +94,7 @@ export const AboutBrandView: React.FC = () => {
           <div className="md:col-span-4 flex flex-col items-center md:items-start space-y-4">
             <div className="relative w-36 h-36 rounded-2xl overflow-hidden border-2 border-violet-500/50 shadow-2xl">
               <img
-                src="/assets/aistudio/image_72f5fead.png"
+                src=import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png'
                 alt="Anderson Vallejo"
                 className="w-full h-full object-cover object-[center_35%]"
                 referrerPolicy="no-referrer"
