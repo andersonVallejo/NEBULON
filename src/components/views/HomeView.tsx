@@ -1,4 +1,5 @@
 import React from 'react';
+import heroNebulonImage from '../../assets/images/hero_nebulon_brand_1792719198845.jpg';
 import { useApp } from '../../context/AppContext';
 import { 
   ArrowRight, 
@@ -102,7 +103,7 @@ export const HomeView: React.FC = () => {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-900/40 aspect-[16/10] group">
                 <img
-                  src="/src/assets/images/hero_nebulon_brand_1792719198845.jpg"
+                  src={heroNebulonImage}
                   alt="NEBULØN Workstation & Architecture"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
