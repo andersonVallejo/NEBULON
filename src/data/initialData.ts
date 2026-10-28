@@ -1,3 +1,7 @@
+import heroNebulonImage from '../assets/images/hero_nebulon_brand_1792719198845.jpg';
+import project3dImage from '../assets/images/project_interactive_3d_1792719225646.jpg';
+import projectSaasImage from '../assets/images/project_saas_platform_1792719210711.jpg';
+
 import {
   ProjectItem,
   ServiceItem,
@@ -20,7 +24,7 @@ export const INITIAL_USERS: UserProfile[] = [
     name: 'Anderson Vallejo',
     username: 'anderson_nebulon',
     email: 'andersonvallejo021@gmail.com',
-    avatar: '/assets/aistudio/image_72f5fead.png',
+    avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png',
     role: 'admin',
     bio: 'Fundador y arquitecto de software en NEBULØN. Especializado en sistemas web reactivos, arquitectura limpia y experiencias interactivas modernas.',
     experienceLevel: 'Lead / Arquitecto',
@@ -65,7 +69,7 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     summary: 'Arquitectura SaaS integral para procesamiento de eventos en milisegundos con tablero interactivo, particionamiento de base de datos y auditoría de accesos.',
     category: 'Aplicaciones web',
     status: 'Publicado',
-    imageUrl: '/src/assets/images/project_saas_platform_1792719210711.jpg',
+    imageUrl: projectSaasImage,
     problemSolved: 'Las plataformas tradicionales saturaban el navegador al procesar más de 10,000 métricas concurrentes por minuto sin agregación previa.',
     architectureDecisions: 'Se implementó una capa intermedia con WebSockets y buffer de datos en memoria antes de la persistencia en PostgreSQL, renderizado virtualizado con React y Zustand para evitar re-renderizados innecesarios.',
     features: [
@@ -89,7 +93,7 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     summary: 'Exploración interactiva en el navegador que combina computación geométrica, shaders procedurales y respuesta háptica visual.',
     category: 'Experiencias 3D',
     status: 'Publicado',
-    imageUrl: '/src/assets/images/project_interactive_3d_1792719225646.jpg',
+    imageUrl: project3dImage,
     problemSolved: 'La renderización de grafos tridimensionales complejos solía congelar la interfaz de usuario en dispositivos móviles o equipos sin tarjeta gráfica dedicada.',
     architectureDecisions: 'Uso de Three.js con InstancedMesh y shaders GLSL personalizados para delegar el cálculo de transformaciones a la GPU, reduciendo los draw-calls a una sola pasada.',
     features: [
@@ -113,7 +117,7 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     summary: 'Sistema multi-inquilino para negocios de servicios profesionales con selector interactivo de disponibilidad, confirmación instantánea y panel de control administrativo.',
     category: 'Reservas y citas',
     status: 'Publicado',
-    imageUrl: '/src/assets/images/hero_nebulon_brand_1792719198845.jpg',
+    imageUrl: heroNebulonImage,
     problemSolved: 'Pérdida de clientes y doble asignación de citas debido a procesos manuales por mensajería.',
     architectureDecisions: 'Mecanismo de reservas con transacciones atómicas y bloqueo pesimista en periodos de alta concurrencia para asegurar que una franja horaria nunca se duplique.',
     features: [
@@ -137,7 +141,7 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     summary: 'Sitio de captación institucional desarrollado bajo principios de accesibilidad WCAG AA, tipografía editorial y tiempos de carga inferiores a 800ms.',
     category: 'Landing pages',
     status: 'Publicado',
-    imageUrl: '/src/assets/images/project_saas_platform_1792719210711.jpg',
+    imageUrl: projectSaasImage,
     problemSolved: 'Tasa de rebote superior al 45% por tiempos de carga lentos y diseño genérico sin confianza institucional.',
     architectureDecisions: 'Generación estática optimizada con hidratación selectiva, fuentes variables alojadas localmente y compresión WebP progresiva.',
     features: [
@@ -160,7 +164,7 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     summary: 'Simulador interactivo que desglosa el paso a paso de algoritmos clásicos de ordenamiento, búsqueda y grafos con reproducción paso a paso.',
     category: 'Herramientas digitales',
     status: 'En desarrollo',
-    imageUrl: '/src/assets/images/project_interactive_3d_1792719225646.jpg',
+    imageUrl: project3dImage,
     problemSolved: 'La dificultad de estudiantes y desarrolladores júnior para comprender la recursión y el intercambio de memoria en algoritmos abstractos.',
     architectureDecisions: 'Generadores iteradores (function*) en TypeScript para pausar y reanudar la ejecución del algoritmo exactamente en cada punto de corte visual.',
     features: [
@@ -182,7 +186,7 @@ export const INITIAL_PROJECTS: ProjectItem[] = [
     summary: 'Tienda digital de alto impacto estético con navegación instantánea entre colecciones, carrito persistente en el dispositivo y pasarela preparada para Stripe.',
     category: 'Páginas web',
     status: 'Prototipo',
-    imageUrl: '/src/assets/images/hero_nebulon_brand_1792719198845.jpg',
+    imageUrl: heroNebulonImage,
     problemSolved: 'Las plataformas estándar de e-commerce suelen ofrecer plantillas rígidas con interfaces lentas y poca diferenciación de marca.',
     architectureDecisions: 'Frontend desacoplado consumiendo APIs REST con caché en memoria SWR para transiciones de producto sin recarga.',
     features: [
@@ -627,7 +631,7 @@ export function getContrastRatio(rgb1: [number, number, number], rgb2: [number, 
       id: 'user_admin',
       name: 'Anderson Vallejo',
       username: 'anderson_nebulon',
-      avatar: '/assets/aistudio/image_72f5fead.png',
+      avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png',
       role: 'admin'
     },
     categoryId: 'cat-frontend',
@@ -649,7 +653,7 @@ export const INITIAL_COMMENTS: CommunityComment[] = [
       id: 'user_admin',
       name: 'Anderson Vallejo',
       username: 'anderson_nebulon',
-      avatar: '/assets/aistudio/image_72f5fead.png',
+      avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png',
       role: 'admin'
     },
     content: 'El problema principal es el Sequential Scan en la tabla orders. Necesitas un índice compuesto que cubra el campo del filtro y la clave foránea del usuario.',
@@ -673,7 +677,7 @@ ON order_items (order_id) INCLUDE (price, quantity);`
       id: 'user_admin',
       name: 'Anderson Vallejo',
       username: 'anderson_nebulon',
-      avatar: '/assets/aistudio/image_72f5fead.png',
+      avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png',
       role: 'admin'
     },
     content: 'Recomiendo un enfoque híbrido: contratos de dominio compartidos (entidades principales de la base de datos o DTOs del backend) en una carpeta raíz como `src/types/domain/`, y tipos específicos de props de componentes junto al propio archivo `.tsx`. Esto evita tener que abrir tres carpetas para entender un solo componente.',
