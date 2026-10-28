@@ -161,8 +161,24 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return INITIAL_USERS[0];
   });
 
-  // Projects
-  const [projects, setProjects] = useState<ProjectItem[]>(() => loadStorage('projects', INITIAL_PROJECTS));
+  // Projects: repair legacy image paths saved before assets were bundled by Vite.
+  const [projects, setProjects] = useState<ProjectItem[]>(() => {
+    const storedProjects = loadStorage<ProjectItem[]>('projects', INITIAL_PROJECTS);
+    if (!Array.isArray(storedProjects)) return INITIAL_PROJECTS;
+
+    return storedProjects.map((project) => {
+      const imagePath = typeof project?.imageUrl === 'string' ? project.imageUrl : '';
+      const hasLegacyLocalPath =
+        imagePath.startsWith('/src/assets/images/') ||
+        imagePath.startsWith('/NEBULON/assets/images/') ||
+        imagePath.startsWith('/assets/images/');
+
+      if (!hasLegacyLocalPath) return project;
+
+      const defaultProject = INITIAL_PROJECTS.find((item) => item.id === project.id);
+      return defaultProject ? { ...project, imageUrl: defaultProject.imageUrl } : project;
+    });
+  });
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
 
   // Services
