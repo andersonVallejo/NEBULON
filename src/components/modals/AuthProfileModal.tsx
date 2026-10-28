@@ -73,7 +73,7 @@ export const AuthProfileModal: React.FC = () => {
           {/* User Header */}
           <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-950/50 border border-slate-800">
             <img
-              src={currentUser?.avatar || '/assets/aistudio/image_72f5fead.png'}
+              src={currentUser?.avatar || import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png'}
               alt={currentUser?.name || 'Anderson Vallejo'}
               className="w-14 h-14 rounded-full object-cover object-[center_35%] border-2 border-violet-500/50"
               referrerPolicy="no-referrer"
