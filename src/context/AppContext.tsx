@@ -148,7 +148,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       const loaded = loadStorage('users', INITIAL_USERS);
       if (Array.isArray(loaded) && loaded.length > 0) {
         return loaded.map((u) =>
-          u && u.id === 'user_admin' ? { ...u, avatar: '/assets/aistudio/image_72f5fead.png' } : u
+          u && u.id === 'user_admin' ? { ...u, avatar: import.meta.env.BASE_URL + 'assets/aistudio/image_72f5fead.png' } : u
         );
       }
       return INITIAL_USERS;
