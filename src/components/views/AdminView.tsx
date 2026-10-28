@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import projectSaasImage from '../../assets/images/project_saas_platform_1792719210711.jpg';
 import { useApp } from '../../context/AppContext';
 import { RequestStatus, ProjectStatus, ProjectItem } from '../../types';
 import { 
@@ -55,7 +56,7 @@ export const AdminView: React.FC = () => {
     summary: '',
     category: 'Aplicaciones web' as any,
     status: 'Publicado' as ProjectStatus,
-    imageUrl: '/NEBULON/assets/images/project_saas_platform_1792719210711.jpg',
+    imageUrl: projectSaasImage,
     problemSolved: '',
     architectureDecisions: '',
     features: '',
