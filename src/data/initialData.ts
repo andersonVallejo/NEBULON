@@ -489,9 +489,9 @@ export const INITIAL_CATEGORIES: CommunityCategory[] = [
   { id: 'cat-challenges', name: 'Retos y desafíos', slug: 'retos', description: 'Problemas de lógica, algoritmos y ejercicios semanales de programación.', iconName: 'Award' },
 ];
 
-export const INITIAL_POSTS: CommunityPost[] =  []];
+export const INITIAL_POSTS: CommunityPost[] = [];
 
-export const INITIAL_COMMENTS: CommunityComment[] =  []];
+export const INITIAL_COMMENTS: CommunityComment[] = [];
 
 export const INITIAL_CHALLENGES: CodingChallenge[] = [
   {
@@ -682,8 +682,8 @@ console.log(user?.profile?.name ?? 'Invitado');`
   }
 ];
 
-export const INITIAL_REVIEWS: ReviewItem[] =  []];
+export const INITIAL_REVIEWS: ReviewItem[] = [];
 
-export const INITIAL_REPORTS: PlatformReport[] =  []];
+export const INITIAL_REPORTS: PlatformReport[] = [];
 
-export const INITIAL_NOTIFICATIONS: NotificationItem[] =  []];
+export const INITIAL_NOTIFICATIONS: NotificationItem[] = [];
