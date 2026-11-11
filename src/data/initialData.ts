@@ -474,7 +474,7 @@ export const INITIAL_SERVICES: ServiceItem[] = [
   }
 ];
 
-export const INITIAL_REQUESTS: ServiceRequest[] =  []];
+export const INITIAL_REQUESTS: ServiceRequest[] = [];
 
 export const INITIAL_CATEGORIES: CommunityCategory[] = [
   { id: 'cat-principiantes', name: 'Programación para principiantes', slug: 'principiantes', description: 'Primeros pasos, dudas conceptuales y orientación para comenzar en el desarrollo.', iconName: 'Compass' },
